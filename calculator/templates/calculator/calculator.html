@@ -7,6 +7,16 @@
         <title>Tip Calculator</title>
     </head>
     <body>
-        Insert Tip Calculator here
+        <h1>Tip Calculator</h1>
+        <form method="POST" action="{% url 'calculator:calculator' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Calculate"/>
+            {% if result %}
+            <div>
+                Tip Amount: ${{ result }}
+            </div>
+            {% endif %}
+        </form>
     </body>
 </html>
