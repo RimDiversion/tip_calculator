@@ -1,0 +1,1 @@
+My girlfriend is bad at calculating tips and wanted a super simple way to calculate tips
