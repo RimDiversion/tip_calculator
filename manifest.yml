@@ -1,0 +1,11 @@
+applications:
+  - name: tip_calulator
+    routes:
+      - route: rim.us-south.cf.appdomain.cloud
+    memory: 128M
+    buildpack: python_buildpack
+  - name: tip_calculator-nginx
+    routes:
+      - route: rim.us-south.cf.appdomain.cloud/static
+    memory: 128M
+    buildpack: staticfile_buildpack
